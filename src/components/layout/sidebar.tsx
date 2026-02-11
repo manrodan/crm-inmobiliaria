@@ -17,12 +17,14 @@ import {
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
-{ name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
-{ name: 'Leads', href: '/dashboard/leads', icon: Bell },
-{ name: 'Propiedades', href: '/dashboard/propiedades', icon: Building2 },
-{ name: 'Clientes', href: '/dashboard/clientes', icon: Users },
-{ name: 'Agentes', href: '/dashboard/agentes', icon: UserCircle },
-{ name: 'Agenda', href: '/dashboard/agenda', icon: Calendar },
+const navigation = [
+    { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
+    { name: 'Leads', href: '/dashboard/leads', icon: Bell },
+    { name: 'Propiedades', href: '/dashboard/propiedades', icon: Building2 },
+    { name: 'Clientes', href: '/dashboard/clientes', icon: Users },
+    { name: 'Agentes', href: '/dashboard/agentes', icon: UserCircle },
+    { name: 'Agenda', href: '/dashboard/agenda', icon: Calendar },
+];
 
 export function Sidebar() {
     const pathname = usePathname();
