@@ -141,7 +141,7 @@ export default function PropiedadesPage() {
                         </Button>
                     </div>
 
-                    <Link href="/propiedades/nueva">
+                    <Link href="/dashboard/propiedades/nueva">
                         <Button className="bg-blue-600 hover:bg-blue-700">
                             <Plus className="h-4 w-4 mr-2" />
                             Nueva Propiedad
@@ -161,7 +161,7 @@ export default function PropiedadesPage() {
                             const agent = agents.find(a => a.id === property.agentId);
 
                             return (
-                                <Link key={property.id} href={`/propiedades/${property.id}`}>
+                                <Link key={property.id} href={`/dashboard/propiedades/${property.id}`}>
                                     <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer group">
                                         <div className="relative h-48">
                                             <img
@@ -220,7 +220,7 @@ export default function PropiedadesPage() {
                             const agent = agents.find(a => a.id === property.agentId);
 
                             return (
-                                <Link key={property.id} href={`/propiedades/${property.id}`}>
+                                <Link key={property.id} href={`/dashboard/propiedades/${property.id}`}>
                                     <Card className="overflow-hidden hover:shadow-md transition-shadow cursor-pointer">
                                         <div className="flex">
                                             <div className="w-48 h-32 relative shrink-0">

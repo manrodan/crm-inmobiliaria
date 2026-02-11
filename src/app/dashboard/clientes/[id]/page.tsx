@@ -41,7 +41,7 @@ export default function ClientDetailPage() {
                 <div className="flex-1 flex items-center justify-center">
                     <div className="text-center">
                         <p className="text-slate-500 mb-4">El cliente que buscas no existe.</p>
-                        <Link href="/clientes">
+                        <Link href="/dashboard/clientes">
                             <Button>Volver a Clientes</Button>
                         </Link>
                     </div>

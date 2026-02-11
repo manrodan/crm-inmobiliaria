@@ -44,7 +44,7 @@ export default function PropertyDetailPage() {
                 <div className="flex-1 flex items-center justify-center">
                     <div className="text-center">
                         <p className="text-slate-500 mb-4">La propiedad que buscas no existe.</p>
-                        <Link href="/propiedades">
+                        <Link href="/dashboard/propiedades">
                             <Button>Volver a Propiedades</Button>
                         </Link>
                     </div>

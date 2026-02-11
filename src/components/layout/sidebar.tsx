@@ -17,14 +17,12 @@ import {
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
-const navigation = [
-    { name: 'Dashboard', href: '/', icon: LayoutDashboard },
-    { name: 'Leads', href: '/leads', icon: Bell },
-    { name: 'Propiedades', href: '/propiedades', icon: Building2 },
-    { name: 'Clientes', href: '/clientes', icon: Users },
-    { name: 'Agentes', href: '/agentes', icon: UserCircle },
-    { name: 'Agenda', href: '/agenda', icon: Calendar },
-];
+{ name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
+{ name: 'Leads', href: '/dashboard/leads', icon: Bell },
+{ name: 'Propiedades', href: '/dashboard/propiedades', icon: Building2 },
+{ name: 'Clientes', href: '/dashboard/clientes', icon: Users },
+{ name: 'Agentes', href: '/dashboard/agentes', icon: UserCircle },
+{ name: 'Agenda', href: '/dashboard/agenda', icon: Calendar },
 
 export function Sidebar() {
     const pathname = usePathname();
@@ -78,7 +76,7 @@ export function Sidebar() {
             {/* Settings & Collapse */}
             <div className="border-t border-slate-800 p-2">
                 <Link
-                    href="/configuracion"
+                    href="/dashboard/configuracion"
                     className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
                 >
                     <Settings className="h-5 w-5 shrink-0" />

@@ -221,7 +221,7 @@ export default function DashboardPage() {
                                 Próximas Visitas
                             </CardTitle>
                             <Link
-                                href="/agenda"
+                                href="/dashboard/agenda"
                                 className="text-sm text-blue-600 hover:underline"
                             >
                                 Ver todas

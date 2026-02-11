@@ -46,13 +46,13 @@ export function Header({ title }: HeaderProps) {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                         <DropdownMenuItem asChild>
-                            <Link href="/propiedades/nueva">Nueva Propiedad</Link>
+                            <Link href="/dashboard/propiedades/nueva">Nueva Propiedad</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                            <Link href="/clientes/nuevo">Nuevo Cliente</Link>
+                            <Link href="/dashboard/clientes/nuevo">Nuevo Cliente</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                            <Link href="/agenda/nueva-visita">Nueva Visita</Link>
+                            <Link href="/dashboard/agenda/nueva-visita">Nueva Visita</Link>
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
