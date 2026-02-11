@@ -1,6 +1,7 @@
 'use client';
 
 import { Header } from '@/components/layout';
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -232,6 +233,13 @@ export default function LeadsPage() {
                         <RefreshCw className={`h-4 w-4 mr-2 ${loading ? 'animate-spin' : ''}`} />
                         Actualizar
                     </Button>
+
+                    <Link href="/dashboard/leads/test">
+                        <Button variant="secondary">
+                            <Send className="h-4 w-4 mr-2" />
+                            Simular Lead
+                        </Button>
+                    </Link>
 
                     <div className="ml-auto text-sm text-slate-500">
                         {leads.length} leads encontrados
